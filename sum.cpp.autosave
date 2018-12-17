@@ -1,0 +1,34 @@
+#include "function.h"
+#include <QLayoutItem>
+
+void SumMatrix(QComboBox &conboboxM1x, QComboBox &conboboxM1y, Matrix &m1, Matrix &m2, Matrix &m3){
+    int x1 = conboboxM1x.currentText().toInt();
+    int y1 = conboboxM1y.currentText().toInt();
+    for (int i = 0; i < x1; i++)
+    {
+        for (int j = 0; j < y1; j++)
+        {
+              m3.lineEdit[i][j]->setText(QString::number(m1.lineEdit[i][j]->text().toInt() + m2.lineEdit[i][j]->text().toInt()));
+        }
+    }
+}
+
+void DifferenceMatrix(QComboBox &conboboxM1x, QComboBox &conboboxM1y, Matrix &m1, Matrix &m2, Matrix &m3){
+    
+}
+
+void MultiOnNumberMatrix(QComboBox &conboboxM1x, QComboBox &conboboxM1y, Matrix &m1, Matrix &m2, Matrix &m3){
+    
+}
+
+void MultiOnVectorMatrix(QComboBox &conboboxM1x, QComboBox &conboboxM1y, Matrix &m1, Matrix &m2, Matrix &m3){
+    
+}
+
+void MultiplicationMatrix(QComboBox &conboboxM1x, QComboBox &conboboxM2y, QComboBox &conboboxM1y, Matrix &m1, Matrix &m2, Matrix &m3){
+    
+}
+
+void EqualsMatrix(QComboBox &conboboxM1x, QComboBox &conboboxM1y, Matrix &m1, Matrix &m2, Matrix &m3){
+    
+}
